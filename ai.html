@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #212121;
+      color: #FFF;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a, li, footer, nav ul li a {
+      font-family: 'Press Start 2P', cursive;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #64FFDA;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: #37474F;
+      color: #FFF;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+    }
+
+    .profile-image {
+      border: 3px solid #64FFDA;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1E272E;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #64FFDA;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00E676;
+    }
+
+    #about, #contact {
+      background-color: #424242;
+      padding: 100px 0;
+    }
+
+    #projects {
+      background-image: url('https://static01.nyt.com/images/2022/04/04/multimedia/15ai-nocode/15ai-nocode-videoSixteenByNineJumbo1600.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #FFF;
+    }
+
+    #projects .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+
+    .project {
+      margin-bottom: 40px;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+    }
+
+    .project a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #64FFDA;
+      color: #212121;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .project a:hover {
+      background: #00E676;
+    }
+
+    footer {
+      background: #37474F;
+      color: #FFF;
+      text-align: center;
+    }
+
+    /* New CSS for interactive sections */
+    #about:hover, #projects:hover, #skills:hover, #contact:hover {
+      opacity: 0.8;
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="profile-image">
+        <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.6435-9/85183718_1066280617053997_5656031278072332288_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFIvMB9gLK_BTp59KqA4cqQuXcYollxley5dxiiWXGV7IeYSM8qKEdRbAradxPPgG9hAWEG_CT-dYjlslBcnuzI&_nc_ohc=uRxGp78Nnj4Ab6ryLm5&_nc_ht=scontent.fmnl17-2.fna&oh=00_AfAUjIMwPBA-EKNZjFGC9SjKBdNlbSNyAb9yApngHvJVFg&oe=6646156D" alt="Profile Picture">
+      </div>
+      <div>
+        <h1>Jethro Agnapan</h1>
+        <p>Web Technology | Student | Male</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am Jethro Agnapan a web technology student @ the University of the Cordilleras.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Technical Documentation Page</h3>
+        <p>This is a technical documentation page created using HTML and CSS.</p>
+        <a href="https://jethroagnapan.github.io/TechnicalDoc/" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Product Landing Page</h3>
+        <p>This is a product landing page created using HTML and CSS.</p>
+        <a href="https://jethroagnapan.github.io/prodpage/" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Tribute Page</h3>
+        <p>This is a tribute page created using HTML and CSS.</p>
+        <a href="https://jethroagnapan.github.io/TributePage/" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p>Here are some of my programming skills:</p>
+      <ul>
+        <li>basic HTML</li>
+        <li>basic CSS</li>
+        <li>basic JavaScript</li>
+        <li>basic Python</li>
+        <li>basic Java</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to get in touch with me through the following channels:</p>
+      <ul>
+        <li>Email: jethroagnapan9@gmail.com</li>
+        <li>Phone: 09071596477</li>
+        <li>Social Media: <a href="https://www.facebook.com/profile.php?id=100010162055973" target="_blank">Facebook Profile</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Agnapan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript for interactivity
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(section => {
+      section.addEventListener('mouseover', () => {
+        section.style.backgroundColor = '#FF5722'; // Change background color on hover
+      });
+
+      section.addEventListener('mouseout', () => {
+        section.style.backgroundColor = ''; // Revert back to original background color
+      });
+    });
+  </script>
+</body>
+</html>
