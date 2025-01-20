@@ -1,0 +1,379 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding-top: 60px; /* Adjust for fixed navbar */
+  font-weight: bold; /* Make fonts strong */
+}
+
+h1, h2, h3, h4, h5, h6, a, li, footer, nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; /* Make fonts strong */
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold; /* Make fonts strong */
+}
+
+
+#skills {
+  padding: 50px 50px;
+  background-color: #000;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#skills ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  text-align: left; /* Align items to the left */
+}
+
+#skills ul li {
+  margin-bottom: 15px; /* Add more space between items */
+  font-size: 20px; /* Increase font size */
+}
+
+#home {
+  padding: 50px 20px;
+  background-color: #000000;
+  color: #FFF;
+  text-align: center;
+  height: 100vh; /* Make the home section take the whole screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home h1 {
+  font-size: 100px;
+  color: #FFF;
+}
+
+#home p {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 50px;
+  padding-left: 70px; /* Add more padding on the left */
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 30px;
+  
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static01.nyt.com/images/2022/04/04/multimedia/15ai-nocode/15ai-nocode-videoSixteenByNineJumbo1600.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); /* Adjust the blur value as needed */
+ 
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+header h1 {
+  margin: 50px 50px;
+  color: #FFF;
+  font-size: 45px;
+}
+
+.header-container img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  object-fit: cover;
+  margin-right: 20px;
+  
+  
+}
+
+.header-container > div {
+  margin: 10px 0; /* Add spacing between elements */
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px; /* Add spacing below the h1 */
+}
+
+.profile-image {
+
+  
+  overflow: hidden;
+  margin:auto;
+  width: 400px;
+  height: 500px;
+  justify-content: center;
+  
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content:left;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #3effe5;
+}
+
+#about {
+  background-color: #000;
+  color: #FFF;
+  padding: 100px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  background-color: #000;
+  color: #FFF;
+  padding: 100px 0;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#contact ul li {
+  margin: 0 15px; /* Add spacing between list items */
+}
+
+#contact ul li a {
+  color: #ffffff; /* Light blue color for Facebook link */
+}
+
+#contact ul li a:hover {
+  color: #00BFFF; /* Slightly darker light blue on hover */
+}
+
+#projects {
+  background-image: url('https://static01.nyt.com/images/2022/04/04/multimedia/15ai-nocode/15ai-nocode-videoSixteenByNineJumbo1600.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  height: 100vh;
+  padding-top: 100px; /* Add more top padding to move the gallery lower */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects .container {
+  background-color: rgba(0, 0, 0, 0.9); /* Adjust opacity */
+  padding: 40px 20px 20px; /* Increase top padding */
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  justify-content: center;
+}
+
+.project {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 0 0 30%; /* Adjust width to show 2 projects at a time */
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #000; /* Add black border color */
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #64FFDA;
+  color: #FFF; /* Make text white */
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.project a:hover {
+  background: #ffffff;
+  color: #000; /* Change text to black on hover */
+}
+
+#projects .nav-buttons {
+  display: none; /* Hide the navigation buttons */
+}
+
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #FFF;
+}
+
+
+
+section {
+  position: relative;
+  padding: 50px 20px;
+  margin: 20px 0;
+  overflow: hidden; /* Ensure floating icons stay within the section */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Start from below */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth fade-in and slide-up transition */
+}
+
+section.visible {
+  opacity: 1; /* Fully visible when scrolled into view */
+  transform: translateY(0); /* Move to original position */
+}
+
+section * {
+  text-shadow: 1px 1px 2px #000;
+}
+
+.floating-icon {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: -1; /* Ensure icons are in the background layer */
+}
+
+section:hover .floating-icon {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+/* Rhombus container styles */
+.rhombus-container {
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 200px;
+  height: 50px;
+  background-color:black;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(-30deg);
+}
+
+.rhombus-container h2 {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  transform: skew(30deg);
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.info-box {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 0.8 opacity */
+  color: #FFF;
+  padding: 30px;
+
+  width: 30%;
+  text-align: left; /* Align text to the left */
+}
+
+.info-box h3 {
+  margin-bottom: 15px; /* Add more space below the h3 element */
+  text-align: center; /* Center the h3 elements */
+}
